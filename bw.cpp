@@ -13,11 +13,13 @@ int main(int argc, char** argv)
 		w = getWord();
 	else
 		w = argv[1];
-	bf o_br(w);
+	/*bf o_br(w);
 	size_t len = w.size();
 	std::cout<<len;
 
 	for(auto a : o_br.wordlist)
-	{std::cout<<a<<std::endl;}
+	{std::cout<<a<<std::endl;}*/
+	bf o_br(w, w.size(), "");
+
 	return 0;
 }

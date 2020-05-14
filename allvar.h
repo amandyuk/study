@@ -8,6 +8,7 @@ class bf
 	std::vector<std::string> wordlist;
 
 
-	bf(std::string& s);
+	bf(const std::string&, size_t, const std::string&);
+	void visit(std::string const&, size_t, std::string const&);
 };
 
